@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Routes from './routes';
-import RouteType from './types/route';
 
 const App: React.FC = () => {
     return(
@@ -13,6 +12,7 @@ const App: React.FC = () => {
     )
 }
 
+//Function converting your route array from routes.ts to <Route> components
 const routes = Routes.map((route) => <Route exact={route.exact} path={route.url} component={route.component}/> );
 
 export default App;

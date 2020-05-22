@@ -1,0 +1,14 @@
+.intro{
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro > p{
+    display: flex;
+    height: fit-content;
+}

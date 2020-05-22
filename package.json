@@ -1,0 +1,28 @@
+{
+  "name": "react-ts-template",
+  "version": "1.0.0",
+  "description": "My React Typescript template with configured webpack and eslint",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KadEyy/react-ts-template.git"
+  },
+  "author": "KadEyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KadEyy/react-ts-template/issues"
+  },
+  "homepage": "https://github.com/KadEyy/react-ts-template#readme",
+  "dependencies": {
+    "@types/react": "^16.9.35",
+    "awesome-typescript-loader": "^5.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

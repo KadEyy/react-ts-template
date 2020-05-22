@@ -8,6 +8,9 @@ module.exports = {
         path: path.resolve(__dirname, "bulid"),
         filename: "bundle.js"
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    },
     module: {
         rules: [
             {
@@ -15,6 +18,9 @@ module.exports = {
                 loader: 'awesome-typescript-loader'
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'public', 'index.html') }),

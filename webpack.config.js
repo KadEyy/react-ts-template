@@ -17,6 +17,7 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader'
             },
+            //Css loaders
             {
                 test: /\.css$/,
                 use: [
@@ -40,7 +41,39 @@ module.exports = {
                     'css-loader'
                 ],
                 exclude: /\.module\.css$/
-            }
+            },
+            //Sass loaders
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: {
+                                mode: 'local',
+                                localIdentName: '[hash:base64:8]'
+                            },
+                        }
+                    },
+                    "postcss-loader"
+                ],
+                include: /\.module\.scss$/
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader',
+                    'sass-loader'
+                ],
+                exclude: /\.module\.scss$/
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
         ]
     },
     devServer: {

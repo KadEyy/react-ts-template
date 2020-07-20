@@ -1,6 +1,6 @@
 import * as React from 'react';
 import pageStyle from '../Page.module.css';
-import style from './Home.module.css';
+import style from './Home.module.scss';
 
 const HomePage: React.FC = () =>{
     return(

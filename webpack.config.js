@@ -56,7 +56,8 @@ module.exports = {
                             },
                         }
                     },
-                    "postcss-loader"
+                    "postcss-loader",
+                    'sass-loader'
                 ],
                 include: /\.module\.scss$/
             },
